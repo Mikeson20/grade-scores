@@ -1,0 +1,26 @@
+Project Information:
+A program that orders students grades.
+
+Requirements:
+1. Ordered by grade highest to lowest.
+2. If grades are same, order by last name alphabetically.
+3. If grades and lastname are same. Order by first name alphabetically.
+4. Takes a file name as command line parameter.
+5. Reads the file given above.
+6. Each line of file data is formated like this: PEPPER, MARY, 86
+7. From the file name given (R:4) amends "-graded.txt" to it.
+8. Writes data to file created above (R:7) in the same format (R:6).
+
+Brief:
+Starts with a command line parameter, though does have a default file if one is not given.
+Each charater is read and if a comma or new line is read it as added to its section (lastname, firstname, grade).
+I decided to store data in a linked list, this may not be the best option as insert and search will have an 0(n) Time complexity.
+A double linked list may be a better option, as a search/insert can start from both ends, maybe next version.
+Backing up, when reading file at end of each new line the lines data is added to link list.
+The data position is found before inserting it using myCompare function.
+Once read and insert complete the given filename is amend by scrubing ".txt" and "-graded.txt" added to build new string(not elegantly).
+Writes the linked list contents to the amned file name in the required format.
+
+NOTES:
+A makefile is included.
+Does not have search function, as is not a requirement.
