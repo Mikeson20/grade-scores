@@ -1,8 +1,9 @@
-build: off
+
 deploy:
   - provider: Environment
     name: production
     on:
       branch: master
       appveyor_repo_tag: true
-
+      
+build: off
