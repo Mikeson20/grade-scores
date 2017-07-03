@@ -1,6 +1,6 @@
 
 deploy:
-  - provider: GitHub
+  - provider: Environment
     name: production
     on:
       branch: master
