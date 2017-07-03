@@ -3,10 +3,6 @@ deploy:
     name: production
     on:
       branch: master
-
-  - provider: Environment
-    name: production
-    on:
       appveyor_repo_tag: true
 
       
