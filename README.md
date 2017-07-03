@@ -1,2 +1,2 @@
 # grade-scores
-#test rtdfgr
+Sorts scores by grade, lastname and firstname.
