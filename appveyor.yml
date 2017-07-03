@@ -1,7 +1,11 @@
 deploy:
-  - provider: Environment
+  - provider: GitHub
     name: production
     on:
       branch: master
+
+  - provider: GitHub
+    name: production
+    on:
       appveyor_repo_tag: true
 
